@@ -1,0 +1,23 @@
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.div1 {
+    float: left;
+    width:50%;
+}
+.img1 {
+    float: left;
+    width: 50%;
+
+}
+
+aside {
+    float: right;
+    padding:0px 0px 0px 80px;
+}
