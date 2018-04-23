@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Berk Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <Title> Berk's Homepage</Title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <header>
-        C. Berk Biryol
+        <div class="head_content_container">
+            <div class="name_box">C. Berk Biryol</div>
+            <nav>
+                <a class="inlink" href="index.html">About</a>
+                <a class="portlink" href="portfolio.html">Portfolio</a>
+                <a class="contlink" href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-
-    <img class="img1" src="https://www.geo.arizona.edu/cdcat/Collaborators/berk.jpg" alt="This is me working in the field"> 
-    <section id="text1">
-        In the summer of 2012, I have done some fieldwork in Turkey that involved deploying over 50 seismometers to record not only the earthquakes
-        in Turkey, but also the earthquakes all around the globe. If you are thinking it is too technical of a job, you are wrong!
-        Most of my time was spent on digging holes in the ground, mixing and pouring concrete (Not to mention carrying around those heavy concrete bags)...
-    </section>
-    <aside>
-        <h2>
-            Contact info:
-        </h2>
-        <ul>
-            <li>Email:
-                <a href="mailto:cbkbiryol@gmail.com">cbkbiryol@gmail.com</a>
-            </li>
-            <li>LinkedIn:
-                <a href="https://www.linkedin.com/in/cberkbiryol/">cbkbiryol</a>
-            </li>
-            <li>GitHub:
-                <a href="https://cberkbiryol.github.io/"> cbkbiryol Github Pages</a>
-            </li>
-        </ul>
-    </aside>
-
-<footer>
-    Copyright C. Berk Biryol ®
-</footer>
-
-
+    <main>
+        <section>
+            <h1>About Me</h1>
+            <hr>
+            <img id="berk_pic" src="assets/images/berk_biryol.png" alt="Photo of Berk">
+            <article class="clearfix">
+                <p>I am an adjunct research professor at UNC Chapel Hill. Most of my work involves advanced calculations and
+                    visualizations that help further the understanding of the interior of the Earth. If you think this sounds
+                    too technical and boring, you'd be surprised to know that my work also involves travelling to places
+                    and doing fieldwork out in the wilderness where no man has ever set a foot (like Antarctica for instance...).
+                    Yes, some may think this is way too cool, but nothing comes for free. The fieldwork part of my job requires
+                    me to carry out some laborious tasks such as diging 6 feet deep holes in the ground, mixing and pouring
+                    concrete and carrying 80 lbs concrtete bags up the mountains...But it is totally worth it! :)
+                </p>
+                <p>Aside from work, I recently became a father. I have a 1 year old daughter, whose growth (both mental and
+                    physical) amazes me eveyday. I love spending time with her and playing games. I have never imagined
+                    I would enjoy playing pick-a-boo as a grown man this much...In addition to the passion for my family,
+                    I am also consumed with computer programming and coding. Infact, I feel that coding is the best part
+                    of my current work (even better than fieldwork!!!). This is the sole reason for my decision to take some
+                    important steps towards learning web development and starting my journey towards a career in coding.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Connect with Me</h2>
+            <hr>
+            <a href="https://github.com/cberkbiryol" target="_blank">
+                <img class="connect_ico" src="assets/images/github.png" alt="my GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/cberkbiryol" target="_blank">
+                <img class="connect_ico" src="assets/images/linkedin.png" alt="my LinkedIn">
+            </a>
+            <a href="https://stackoverflow.com/users/9325838/c-berk-biryol?tab=profile" target="_blank">
+                <img class="connect_ico" src="assets/images/stackoverflow.png" alt="my Stackoverflow">
+            </a>
+        </aside>
+    </main>
+    <footer>
+        © Copyright 2018 C. Berk Biryol
+    </footer>
 
 </body>
 

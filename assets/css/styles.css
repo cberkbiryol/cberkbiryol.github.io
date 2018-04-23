@@ -1,0 +1,493 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    color: #777777;
+    /* background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png); */
+    background-image: url(https://i.pinimg.com/originals/96/70/fe/9670fecfcf63b872df514ac3fb2dcfe8.jpg);
+    background-blend-mode:screen;
+    background-color: rgba(0, 255, 242, 0.923);
+    background-size:cover;
+    background-repeat: no-repeat;
+    line-height: 40px;
+    font-size: 20px; 
+}
+
+header {
+    position: fixed;
+    top:0;
+    z-index:100;
+    background-color: #ffffff;
+    border-bottom:solid;
+    border-bottom-color:#cccccc;
+    width:100%;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.head_content_container {  /*I used this in order to center the content of the header, just like the the main section, so both align even if the page is resized */
+    position: relative;
+    box-sizing: border-box;
+    left: 2%;
+    padding:0px;
+    width:960px;
+    margin:auto;
+}
+
+.name_box {
+    box-sizing: border-box;
+    position: relative;
+    top:0px;
+    background-color: #4aaaa5;    
+    text-align: center;    
+    padding:25px 20px 25px 20px;  
+    width:250px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+nav {
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    top:20px;
+    color:#4aaaa5;
+    font-weight: normal;
+    padding:0px;
+}
+
+main {
+    position: relative;
+    top: 100px;
+    width: 960px;
+    left:2%;
+    margin:auto;
+}
+
+section {
+    box-sizing: border-box;
+    width: 650px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin:50px 20px 50px 0px;
+    border:solid;
+    border-width: 2px;
+    border-color:#dddddd;
+    overflow: auto;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #4aaaa5;
+    font-weight: bolder;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#berk_pic {
+    width: 200px;
+    height: 200px;
+    float:left; 
+    border-radius: 10px;
+    margin:10px 30px 10px 0px;
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #dddddd;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+article {
+    text-align: justify;    
+} 
+
+.inp1,
+.inp2 {
+    box-sizing: border-box;
+    width:100%;
+    padding:10px;
+}
+
+.inp2 {
+    height: 200px;
+    border:solid 1px #dddddd;
+}
+
+form {
+    padding: 0px;
+}
+
+.butn {
+    box-sizing: border-box;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    margin:20px 0px 0px 0px; 
+    width:120px;
+    height:40px;
+}
+
+.butn:hover {
+    background-color: #6FFFF7
+}
+
+.inp1::placeholder,
+.inp2::placeholder {
+    color: #dddddd;
+}
+
+.anta,
+.volc,
+.eq,
+.oil,
+.med {
+    position:relative;
+    top:0px;
+    right:0px;
+    box-sizing: border-box;
+    padding:0px;
+    width: 40%;
+    float: left;
+    margin: 29px;
+}
+
+.med2 {
+    position:relative;
+    top:0px;
+    right:0px;
+    box-sizing: border-box;
+    padding:0px;
+    width: 40%;
+    clear: left;
+    float: left;
+    margin: 29px;    
+}
+
+.port_ico {    
+    box-sizing: border-box;
+    width: 100%;
+    border:solid 1px #666666;
+    border-radius: 10px;
+    padding:0px;
+}
+
+.port_ico:hover {
+    border:ridge 1px #64E5DF;
+}
+
+.porttext {
+    box-sizing: border-box;
+    position:absolute;
+    background-color: #4aaaa5;
+    text-align: center;     
+    font-size: 30px;
+    color: #ffffff;
+    padding:10px;
+    width:100%;
+    top: 65%;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #4aaaa5;
+    font-weight: bolder;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+aside { 
+    position: absolute;
+    box-sizing: border-box;
+    right:0px;  
+    top:0px;
+    text-align: center;
+    background-color: #ffffff; 
+    padding:20px;
+    border:solid;
+    border-width: 2px;
+    border-color:#dddddd;
+    width:270px;
+    margin: 0px 0px 0px 20px;
+}
+
+.connect_ico {
+    position:relative; /* I added this just to be able to move the icon when it is hovered over */
+    width:70px;
+    height:70px;
+}
+
+.connect_ico:hover {
+   top: -5px; /* moves the icon up a bit when hovered over */
+}
+
+a{
+   text-decoration: none; 
+}
+
+a:link{
+    color:#888686;
+}
+
+a:visited{
+    color:rgb(170, 170, 170);
+}
+
+a:hover {
+    color: #377F7C;
+    font-size: 30px;
+}
+
+.inlink,
+.portlink {
+    border-right: solid 2px #dddddd;
+    padding:0px 20px 0 20px;
+}
+
+.contlink {
+    padding: 0px 0px 0px 20px;
+}
+
+footer { 
+    box-sizing:border-box;
+    position: sticky;
+    bottom:0%;
+    background-color: #666666;
+    color: #ffffff;
+    border-top:solid 10px #4aaaa5;
+    padding: 50px;
+    height: 110px;
+    text-align: center; 
+    font-size:14px;
+    margin:10% auto 0px auto; 
+}
+/* ------------------------------ MEDIA QUERIES START HERE ---------------------- */
+/*==================== MAX 980px BELOW ==================== */
+@media screen and (max-width:980px) {
+    .head_content_container {  
+        width:660px;
+    }
+    
+    .name_box {
+        left: 3%;
+        width:250px;
+    }
+    
+    
+    #berk_pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 80%;
+        float:none;                                    
+    }
+
+    main {
+        width: 660px;
+        left:4%;
+    }
+    
+    section {
+        width: 400px;        
+        padding: 10px;
+        overflow: auto;
+    }
+
+    aside { 
+        padding:10px;        
+        width:250px;
+    }
+    
+    footer { 
+        bottom:0%;
+        padding: 25px;
+        margin:20% auto 0px auto; 
+    }
+
+    .anta,
+    .volc,
+    .eq,
+    .oil,
+    .med {
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 80%;
+        float: none;
+    }
+
+    .port_ico {    
+        width: 100%;
+    }
+}
+/*==================== MAX 768px BELOW ==================== */
+@media screen and (max-width:768px) {
+    .head_content_container {  
+        left:0%;
+        width:700px;
+        margin:auto;
+    }
+    
+    .name_box {
+        left: 0%;
+        width:250px;
+    }
+    
+    main {
+        left:0%;
+        width: 700px;
+        margin:auto;
+    }
+    
+    section {
+        position: relative;
+        left:0%;
+        width: 690px;        
+        padding: 10px;
+        overflow: auto;
+    }
+
+    #berk_pic {
+        width: 60%;
+        height: 60%;    
+        float:left;   
+        margin:10px 30px 10px 0px;                            
+    }
+
+    aside { 
+        position: relative;
+        left:0%;
+        width: 690px;  
+        padding:10px;     
+        margin:25px 0px 25px 0px;   
+    }
+    
+    footer { 
+        bottom:0%;
+        padding: 25px;
+        margin:20% auto 0px auto; 
+        left:0%;
+        right:0%;
+    }
+
+    .anta,
+    .volc,
+    .eq,
+    .oil,
+    .med {
+        width: 40%;
+        float: left;
+        margin: 29px;
+    }
+
+    .port_ico {    
+        width: 100%;
+    }
+
+}
+/*==================== MAX 640px BELOW ==================== */
+@media screen and (max-width:640px) {
+    header {
+        position: static;
+        top:0;
+    }
+    .head_content_container { 
+        position:static; 
+        left:0%;
+        right:0%;
+        width:100%;
+        margin:auto;
+        padding:0px;
+    }
+    
+    .name_box {
+        position:static; 
+        left: 0%;
+        top:0%;
+        width:100%;
+        padding:10px;
+    }
+
+    nav{
+        position:static; 
+        bottom:10%;
+        width:100%;
+        margin:auto;
+        top:10px;
+        text-align: center;
+    }
+    
+    .inlink {
+        position:relative;
+        left:-3%;
+        padding-right: 10%;
+    }
+    .portlink {
+        position:relative;
+        left:-5%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .contlink {
+        position:relative;
+        left:2%;     
+    }
+
+    main {
+        top: 10px;
+        left:0%;
+        width: 100%;
+        margin:auto;
+    }
+    
+    section {
+        position: relative;
+        left:5%;
+        width: 90%;        
+        padding: 10px;
+        margin-top:5%;
+    }
+
+    #berk_pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 60%;
+        float:none;                       
+    }
+
+    aside { 
+        position: relative;
+        left:5%;
+        width: 90%;  
+        padding:10px;     
+        margin:25px 0px 25px 0px;   
+        margin-top:5%;
+    }
+    
+    footer { 
+        position: static;
+        bottom:0%;
+        left:0%;
+        right:0%;
+    }
+
+    .anta,
+    .volc,
+    .eq,
+    .oil,
+    .med {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 80%;
+        float: none;
+    }
+
+    .port_ico {    
+        width: 100%;
+    }
+
+}
