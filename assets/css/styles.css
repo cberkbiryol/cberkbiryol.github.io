@@ -311,13 +311,22 @@ footer {
     .volc,
     .eq,
     .oil,
-    .med {
+    .med,
+    .med2 {
         display: block;
         margin: 20px auto 20px auto;
         width: 80%;
         float: none;
     }
-
+    
+    .med2 {
+        clear: left;
+        float: left;
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 80%;
+        float: none;
+    }
     .port_ico {    
         width: 100%;
     }
@@ -377,6 +386,14 @@ footer {
     .eq,
     .oil,
     .med {
+        width: 40%;
+        float: left;
+        margin: 29px;
+    }
+    
+    .med2 {
+        clear: left;
+        float: left;
         width: 40%;
         float: left;
         margin: 29px;
@@ -479,7 +496,15 @@ footer {
     .volc,
     .eq,
     .oil,
-    .med {
+    .med,
+    .med2 {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 80%;
+        float: none;
+    }
+
+    .med2 {
         display: block;
         margin: 10px auto 10px auto;
         width: 80%;
