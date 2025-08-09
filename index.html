@@ -1,142 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berk Biryol | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- ===== HEADER / HERO SECTION ===== -->
-    <header id="home">
-        <div class="hero-container">
-            <img src="images/profile-placeholder.jpg" alt="Berk Biryol Profile Photo" class="profile-photo">
-            <h1>Berk Biryol</h1>
-            <h2>Senior Software Engineer</h2>
-            <p>Building scalable, high-performance web solutions</p>
-            <div class="hero-buttons">
-                <a href="resume.pdf" class="btn">View Resume</a>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a PhD in Geophysics with 7+ years of software engineering experience. 
-            Skilled in AWS, Docker, React, Node.js, SQL optimization, and modern web technologies.
-        </p>
-        <p><a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank">LinkedIn Profile</a></p>
-    </section>
-
-    <!-- ===== SKILLS SECTION ===== -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-            <span>⚙️ Docker</span>
-            <span>☁️ AWS</span>
-            <span>⚛️ React</span>
-            <span>💻 Node.js</span>
-            <span>🗄️ SQL</span>
-            <span>🧪 Testing</span>
-        </div>
-    </section>
-
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <div class="project-image-container">
-                <img src="images/project-placeholder.png" alt="Project Screenshot">
-            </div>
-            <div class="project-content">
-                <h3>Health Journal App</h3>
-                <p>A full-stack app built with React, Node.js, GraphQL, and MySQL. Helps users track medications, symptoms, and mood over time.</p>
-                <div class="project-buttons">
-                    <a href="#" class="btn project-btn">GitHub</a>
-                    <a href="#" class="btn project-btn live">Live Demo</a>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Berk Biryol — Senior Software Engineer. APIs, performance, cloud-native.">
+    <meta property="og:title" content="Berk Biryol — Portfolio">
+    <meta property="og:description" content="APIs, performance, cloud-native deployments.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Berk Biryol — Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <script>
+      // Restore theme on first paint
+      (function () {
+        const saved = localStorage.getItem("theme");
+        if (saved === "dark") document.documentElement.classList.add("dark");
+      })();
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-neutral-900 dark:text-neutral-100 antialiased leading-relaxed tracking-tight">
+    <div class="min-h-screen grid grid-cols-1 md:grid-cols-[260px_1fr] max-w-7xl mx-auto">
+      <!-- Sidebar -->
+      <aside class="md:sticky md:top-0 md:h-screen p-6 border-r bg-white dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800">
+        <div class="flex items-start justify-between gap-4">
+          <!-- Dark mode toggle -->
+          <button id="themeToggle"
+                  class="rounded border px-3 py-1 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-800 border-neutral-200 dark:border-neutral-700"
+                  title="Toggle theme">
+            <span class="block dark:hidden">🌙</span>
+            <span class="hidden dark:block">☀️</span>
+          </button>
         </div>
 
-        <div class="project-card">
-            <div class="project-image-container">
-                <img src="images/project-placeholder.png" alt="Project Screenshot">
-            </div>
-            <div class="project-content">
-                <h3>SQL Performance Optimizer</h3>
-                <p>Optimized complex SQL queries using indexing and views, achieving a 10x improvement in response times for a production system.</p>
-                <div class="project-buttons">
-                    <a href="#" class="btn project-btn">GitHub</a>
-                    <a href="#" class="btn project-btn live">Live Demo</a>
-                </div>
-            </div>
+        <nav class="mt-8 space-y-2 text-2xl">
+          <a class="block hover:text-blue-600" href="#about">About</a>
+          <a class="block hover:text-blue-600" href="#projects">Projects</a>
+          <a class="block hover:text-blue-600" href="#contact">Contact</a>
+        </nav>
+
+        <div class="mt-8 text-sm space-y-1">
+          <a class="block underline underline-offset-4 hover:text-blue-600" href="mailto:cberkbiryol@gmail.com">cberkbiryol@gmail.com</a>
+          <a class="block underline underline-offset-4 hover:text-blue-600" target="_blank" href="https://github.com/cberkbiryol">github.com/cberkbiryol</a>
+          <a class="block underline underline-offset-4 hover:text-blue-600" target="_blank" href="https://linkedin.com/in/cberkbiryol">linkedin.com/in/cberkbiryol</a>
         </div>
 
-        <div class="project-card">
-            <div class="project-image-container">
-                <img src="images/project-placeholder.png" alt="Project Screenshot">
-            </div>
-            <div class="project-content">
-                <h3>Dockerized Microservices</h3>
-                <p>Designed and deployed containerized microservices on AWS Fargate, improving scalability and reducing deployment time by 60%.</p>
-                <div class="project-buttons">
-                    <a href="#" class="btn project-btn">GitHub</a>
-                    <a href="#" class="btn project-btn live">Live Demo</a>
-                </div>
-            </div>
+        <footer class="mt-10 text-xs text-gray-400 dark:text-neutral-500">
+          © <span id="y"></span> Berk Biryol
+          <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+        </footer>
+      </aside>
+
+      <!-- Main -->
+      <main class="p-6 space-y-24 max-w-3xl">
+        <!-- Profile Pic and other gheneric info --> 
+        <div class="flex flex-col items-center gap-4">
+          <img src="assets/images/Berk_profile_wide.jpg"
+              alt="Berk Biryol Profile Photo"
+              class="w-36 h-36 md:w-40 md:h-40 object-cover rounded-full border-4 border-neutral-300 dark:border-neutral-700 shadow-sm ring-2 ring-blue-500/30">
+          <div class="space-y-1 items-center text-center">
+            <h1 class="text-5xl font-bold leading-tight">Cemal “Berk” Biryol</h1>
+            <p class="text-2xl text-gray-500 dark:text-neutral-400">Senior Software Engineer</p>
+          </div>
+          <a href="resume.pdf"
+            class="inline-flex items-center rounded-md border border-neutral-700/50 px-4 py-2 text-sm hover:bg-neutral-800 transition">
+            Download Résumé
+          </a>
         </div>
+        <!-- About -->
+        <section id="about">
+          <h2 class="text-5xl font-semibold mb-2">About</h2>
+          <p class="text-gray-700 dark:text-neutral-300 leading-relaxed">
+            I’m Berk Biryol, a passionate and results-driven Senior Software Engineer with a unique background bridging science and technology. Holding a Ph.D. in Geophysics & Seismology, I bring over 7 years of experience in full-stack web development, backend optimization, and cloud-native solutions.
+          </p>
+          <p class="text-gray-700 dark:text-neutral-300 leading-relaxed">
+            My career has spanned projects in data-intensive environments, including large-scale database architecture, RESTful and SOAP APIs, performance tuning for SQL workloads, and containerized deployments using Docker, AWS, and CI/CD pipelines. I’ve had the privilege of providing technical consultation to organizations like the EPA and NIH, delivering high-quality solutions in regulated, mission-critical environments.
+          </p>
+          <p class="text-gray-700 dark:text-neutral-300 leading-relaxed">
+            Beyond backend engineering, I’ve built modern front-end solutions using React, TypeScript, and GraphQL, created real-time dashboards for data visualization, and led initiatives to improve application performance, reducing load times by up to 10x in production systems. I enjoy collaborating with cross-functional teams, mentoring junior developers, and driving technical solutions from concept to deployment.
+          </p>
+          <p class="text-gray-700 dark:text-neutral-300 leading-relaxed">
+            Currently, I’m focused on building scalable, maintainable web applications while expanding my expertise in DevOps practices, testing automation, and cloud-native architecture. I’m passionate about tackling complex challenges, learning emerging technologies, and delivering software that makes an impact.
+          </p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2 class="text-5xl font-semibold mb-4">Selected projects</h2>
+
+          <div class="space-y-6">
+            <!-- Project card -->
+            <article class="rounded-lg border border-neutral-800 bg-neutral-950 p-4 hover:bg-neutral-900/60 transition">
+              <h3 class="font-semibold">Health Journal App</h3>
+              <p class="text-sm text-gray-600 dark:text-neutral-400 mt-1">
+                <ul class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <li class="rounded border border-neutral-700/40 px-2 py-1 text-neutral-300">React</li>
+                  <li class="rounded border border-neutral-700/40 px-2 py-1 text-neutral-300">Node.js</li>
+                  <li class="rounded border border-neutral-700/40 px-2 py-1 text-neutral-300">GraphQL</li>
+                </ul>
+              Medication &amp; symptom tracking, insights, and reminders.
+              </p>
+              <div class="text-sm mt-3 flex gap-4">
+                <a class="text-blue-600 hover:underline" href="#" target="_blank">GitHub</a>
+                <a class="text-blue-600 hover:underline" href="#" target="_blank">Live demo</a>
+              </div>
+            </article>
+
+            <article class="rounded-lg border border-neutral-800 bg-neutral-950 p-4 hover:bg-neutral-900/60 transition">
+              <h3 class="font-semibold">SQL Performance Optimization</h3>
+              <p class="text-sm text-gray-600 dark:text-neutral-400 mt-1">
+                10× speedup on legacy workflows using views, indexing, and query planning.
+              </p>
+            </article>
+
+            <article class="rounded-lg border border-neutral-800 bg-neutral-950 p-4 hover:bg-neutral-900/60 transition">
+              <h3 class="font-semibold">Dockerized Microservices on AWS</h3>
+              <p class="text-sm text-gray-600 dark:text-neutral-400 mt-1">
+                Fargate + GitHub Actions + IaC for reproducible, scalable deployments.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2 class="text-5xl font-semibold mb-2">Contact</h2>
+          <p class="text-gray-700 dark:text-neutral-300 text-sm">
+            Email: <a class="text-blue-600 hover:underline" href="mailto:cberkbiryol@gmail.com">cberkbiryol@gmail.com</a>
+          </p>
+        </section>
+      </main>
     </div>
-</section>
 
-    <!-- ===== EXPERIENCE SECTION ===== -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Senior Software Engineer - ICF</h3>
-            <span>2021 - 2025</span>
-            <p>Optimized SQL performance, developed full-stack applications, deployed with Docker & AWS.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Software Engineer - Regency360</h3>
-            <span>2018 - 2021</span>
-            <p>Developed e-commerce integrations and modernized legacy apps with React.</p>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:cberkbiryol@gmail.com">cberkbiryol@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/cberkbiryol" target="_blank">github.com/cberkbiryol</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank">linkedin.com/in/cberkbiryol</a></p>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>© 2025 Berk Biryol. All Rights Reserved.</p>
-    </footer>
-
-<section id="contact">
-    <div class="contact-container">
-        <h2>Contact Me</h2>
-        <p>If you'd like to connect, collaborate, or discuss opportunities, feel free to reach out!</p>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="contact-links">
-            <a href="mailto:cberkbiryol@gmail.com" class="contact-link">Email</a>
-            <a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank" class="contact-link">LinkedIn</a>
-            <a href="https://github.com/cberkbiryol" target="_blank" class="contact-link">GitHub</a>
-        </div>
-    </div>
-</section>
-
-</body>
+    <script>
+      const btn = document.getElementById('themeToggle');
+      btn?.addEventListener('click', () => {
+        const d = document.documentElement;
+        const next = d.classList.toggle('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', next);
+      });
+    </script>
+  </body>
 </html>
