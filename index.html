@@ -1,64 +1,142 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-    <Title> Berk's Homepage</Title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berk Biryol | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <div class="head_content_container">
-            <div class="name_box">C. Berk Biryol</div>
-            <nav>
-                <a class="inlink" href="index.html">About</a>
-                <a class="portlink" href="portfolio.html">Portfolio</a>
-                <a class="contlink" href="contact.html">Contact</a>
-            </nav>
+    <!-- ===== HEADER / HERO SECTION ===== -->
+    <header id="home">
+        <div class="hero-container">
+            <img src="images/profile-placeholder.jpg" alt="Berk Biryol Profile Photo" class="profile-photo">
+            <h1>Berk Biryol</h1>
+            <h2>Senior Software Engineer</h2>
+            <p>Building scalable, high-performance web solutions</p>
+            <div class="hero-buttons">
+                <a href="resume.pdf" class="btn">View Resume</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
         </div>
     </header>
-    <main>
-        <section>
-            <h1>About Me</h1>
-            <hr>
-            <img id="berk_pic" src="assets/images/berk_biryol.png" alt="Photo of Berk">
-            <article class="clearfix">
-                <p>I am a research scientist at UNC Chapel Hill. Most of my work involves advanced calculations and
-                    visualizations that help further the understanding of the interior of the Earth. If you think this sounds
-                    too technical and boring, you'd be surprised to know that my work also involves travelling to places
-                    and doing fieldwork out in the wilderness where no man has ever set foot on (like Antarctica for instance...).
-                    But this is not as easy as it may seem. The fieldwork part of my job requires
-                    me to carry out some laborious tasks such as diging 6 feet deep holes in the ground, mixing and pouring
-                    concrete and carrying 80 lbs concrete bags up the mountains...But it is totally worth it! :)
-                </p>
-                <p>Aside from work, I recently became a father. I have a 1 year old daughter, whose growth (both mental and
-                    physical) amazes me eveyday. I love spending time with her and playing games. I have never imagined
-                    I would enjoy playing peek-a-boo as a grown man this much...In addition to the passion for my family,
-                    I am also consumed with computer programming and coding. Infact, I feel that coding is the best part
-                    of my current work (even better than fieldwork!!!). This is the sole reason for my decision to take some
-                    important steps towards learning web development and starting my journey towards a career in coding.</p>
-            </article>
-        </section>
-        <aside>
-            <h2>Connect with Me</h2>
-            <hr>
-            <a href="https://github.com/cberkbiryol" target="_blank">
-                <img class="connect_ico" src="assets/images/github.png" alt="my GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/cberkbiryol" target="_blank">
-                <img class="connect_ico" src="assets/images/linkedin.png" alt="my LinkedIn">
-            </a>
-            <a href="https://stackoverflow.com/users/9325838/c-berk-biryol?tab=profile" target="_blank">
-                <img class="connect_ico" src="assets/images/stackoverflow.png" alt="my Stackoverflow">
-            </a>
-        </aside>
-    </main>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a PhD in Geophysics with 7+ years of software engineering experience. 
+            Skilled in AWS, Docker, React, Node.js, SQL optimization, and modern web technologies.
+        </p>
+        <p><a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-icons">
+            <span>⚙️ Docker</span>
+            <span>☁️ AWS</span>
+            <span>⚛️ React</span>
+            <span>💻 Node.js</span>
+            <span>🗄️ SQL</span>
+            <span>🧪 Testing</span>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-image-container">
+                <img src="images/project-placeholder.png" alt="Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>Health Journal App</h3>
+                <p>A full-stack app built with React, Node.js, GraphQL, and MySQL. Helps users track medications, symptoms, and mood over time.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn project-btn">GitHub</a>
+                    <a href="#" class="btn project-btn live">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                <img src="images/project-placeholder.png" alt="Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>SQL Performance Optimizer</h3>
+                <p>Optimized complex SQL queries using indexing and views, achieving a 10x improvement in response times for a production system.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn project-btn">GitHub</a>
+                    <a href="#" class="btn project-btn live">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                <img src="images/project-placeholder.png" alt="Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>Dockerized Microservices</h3>
+                <p>Designed and deployed containerized microservices on AWS Fargate, improving scalability and reducing deployment time by 60%.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn project-btn">GitHub</a>
+                    <a href="#" class="btn project-btn live">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Senior Software Engineer - ICF</h3>
+            <span>2021 - 2025</span>
+            <p>Optimized SQL performance, developed full-stack applications, deployed with Docker & AWS.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Software Engineer - Regency360</h3>
+            <span>2018 - 2021</span>
+            <p>Developed e-commerce integrations and modernized legacy apps with React.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:cberkbiryol@gmail.com">cberkbiryol@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/cberkbiryol" target="_blank">github.com/cberkbiryol</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank">linkedin.com/in/cberkbiryol</a></p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer>
-        © Copyright 2018 C. Berk Biryol
+        <p>© 2025 Berk Biryol. All Rights Reserved.</p>
     </footer>
 
-</body>
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect, collaborate, or discuss opportunities, feel free to reach out!</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-links">
+            <a href="mailto:cberkbiryol@gmail.com" class="contact-link">Email</a>
+            <a href="https://www.linkedin.com/in/cberkbiryol/" target="_blank" class="contact-link">LinkedIn</a>
+            <a href="https://github.com/cberkbiryol" target="_blank" class="contact-link">GitHub</a>
+        </div>
+    </div>
+</section>
 
+</body>
 </html>
