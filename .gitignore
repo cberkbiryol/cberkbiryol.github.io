@@ -1,0 +1,8 @@
+# macOS cruft
+.DS_Store
+
+# Local dev-only (Tailwind v4)
+src/
+tailwind.config.js
+tailwindcss
+
